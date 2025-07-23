@@ -1,0 +1,9 @@
+services:
+  rstudio:
+    image: patrickrobotham/rethinking-rstudio:latest
+    ports:
+      - 8787:8787
+    volumes:
+      - ~/workspace:/home/rstudio/workspace
+    environment:
+      - PASSWORD=password
